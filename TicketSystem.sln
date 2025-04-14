@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketSystem.Endpoint", "Ti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketSystem.Entitites", "TicketSystemEntitites\TicketSystem.Entitites.csproj", "{8AF50407-444F-4AE7-A2DD-A91895A9B3C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketSystem.Data", "TicketSystem.Data\TicketSystem.Data.csproj", "{8DC5E5C1-A7D7-4526-B778-E45222BA3B5F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8AF50407-444F-4AE7-A2DD-A91895A9B3C0} = {8AF50407-444F-4AE7-A2DD-A91895A9B3C0}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +26,10 @@ Global
 		{8AF50407-444F-4AE7-A2DD-A91895A9B3C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AF50407-444F-4AE7-A2DD-A91895A9B3C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AF50407-444F-4AE7-A2DD-A91895A9B3C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DC5E5C1-A7D7-4526-B778-E45222BA3B5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DC5E5C1-A7D7-4526-B778-E45222BA3B5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DC5E5C1-A7D7-4526-B778-E45222BA3B5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DC5E5C1-A7D7-4526-B778-E45222BA3B5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
