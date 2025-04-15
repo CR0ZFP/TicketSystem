@@ -1,15 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketSystem.Endpoint", "TicketSystem\TicketSystem.Endpoint.csproj", "{BA926681-8C0A-41B9-BC9A-27FE30CB1544}"
+	ProjectSection(ProjectDependencies) = postProject
+		{08A67DAC-8464-491A-8A0B-8BF422742889} = {08A67DAC-8464-491A-8A0B-8BF422742889}
+		{8AF50407-444F-4AE7-A2DD-A91895A9B3C0} = {8AF50407-444F-4AE7-A2DD-A91895A9B3C0}
+		{8DC5E5C1-A7D7-4526-B778-E45222BA3B5F} = {8DC5E5C1-A7D7-4526-B778-E45222BA3B5F}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketSystem.Entitites", "TicketSystemEntitites\TicketSystem.Entitites.csproj", "{8AF50407-444F-4AE7-A2DD-A91895A9B3C0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketSystem.Data", "TicketSystem.Data\TicketSystem.Data.csproj", "{8DC5E5C1-A7D7-4526-B778-E45222BA3B5F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{8AF50407-444F-4AE7-A2DD-A91895A9B3C0} = {8AF50407-444F-4AE7-A2DD-A91895A9B3C0}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketSystem.Logic", "TicketSystem.Logic\TicketSystem.Logic.csproj", "{08A67DAC-8464-491A-8A0B-8BF422742889}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8DC5E5C1-A7D7-4526-B778-E45222BA3B5F} = {8DC5E5C1-A7D7-4526-B778-E45222BA3B5F}
 	EndProjectSection
 EndProject
 Global
@@ -30,6 +40,10 @@ Global
 		{8DC5E5C1-A7D7-4526-B778-E45222BA3B5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DC5E5C1-A7D7-4526-B778-E45222BA3B5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DC5E5C1-A7D7-4526-B778-E45222BA3B5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08A67DAC-8464-491A-8A0B-8BF422742889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08A67DAC-8464-491A-8A0B-8BF422742889}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08A67DAC-8464-491A-8A0B-8BF422742889}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08A67DAC-8464-491A-8A0B-8BF422742889}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
